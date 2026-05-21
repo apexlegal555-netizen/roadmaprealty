@@ -296,3 +296,73 @@ document.addEventListener('keydown', function(e) {
     toggleSidebar();
   }
 });
+// ═══════════════════════════════════════════
+// MODERN ANIMATIONS & INTERACTIONS
+// ═══════════════════════════════════════════
+
+// Intersection Observer for scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.story, .hero, .simple-box, .warn-box').forEach(section => {
+  section.style.opacity = '0';
+  section.style.transform = 'translateY(20px)';
+  section.style.transition = 'opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
+  observer.observe(section);
+});
+
+// Stagger animation for KPI cards
+const kpiObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && entry.target.closest('.kpi-grid')) {
+      const cards = entry.target.closest('.kpi-grid').querySelectorAll('.kpi');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, i * 60);
+      });
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.kpi-grid').forEach(grid => {
+  grid.querySelectorAll('.kpi').forEach((card) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+  });
+  kpiObserver.observe(grid);
+});
+
+// Ripple effect for buttons
+document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const rect = this.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = e.clientX - rect.left - size / 2;
+    const y = e.clientY - rect.top - size / 2;
+    
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = x + 'px';
+    ripple.style.top = y + 'px';
+    this.appendChild(ripple);
+    
+    setTimeout(() => ripple.remove(), 600);
+  });
+});
+
+// Smooth hover effects for interactive elements
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', function() {
+    this.style.transition = 'all 0.3s ease';
+  });
+});
