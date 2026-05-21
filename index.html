@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<div class="bg-mesh"></div>
 <div class="controls-wrap shifted" id="controlsWrap">
   <button class="icon-btn" id="toggleBtn" onclick="toggleSidebar()">&#9776;</button>
   <button class="icon-btn" id="themeToggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">&#127183;</button>
@@ -70,10 +71,12 @@
 <main class="main" id="main">
 
 <!-- ─── EXECUTIVE SUMMARY ─── -->
-<div class="hero" id="exec">
+<div class="hero animate-on-scroll" id="exec">
 <h1>&#127968; Realty Managers</h1>
-<p class="sub">India's First Certified Property Ecosystem — Complete Investor Roadmap</p>
-<div class="big-idea">
+<p class="sub">India's First Certified Property Ecosystem — Complete Investor Roadmap</p><div class="hero-actions">
+  <button class="btn-primary" onclick="document.querySelector('#how').scrollIntoView({ behavior: 'smooth' })">Investor Snapshot</button>
+  <button class="btn-secondary" onclick="document.querySelector('#tech').scrollIntoView({ behavior: 'smooth' })">View Tech Roadmap</button>
+</div><div class="big-idea">
 <strong>One-Line Pitch:</strong> We turn India's &#8377;584B chaotic property market into a safe, certified, bank-backed ecosystem by combining RERA verification, geo-tagged physical inspections, bank-partnered escrow, insurance, and legal handholding — all delivered through a master-franchise network.<br><br>
 <strong>Ask:</strong> &#8377;18 Cr for 24 months &nbsp;|&nbsp; <strong>Target:</strong> &#8377;28.5 Cr revenue by Year 3 &nbsp;|&nbsp; <strong>Exit:</strong> Acquisition by portals/banks/insurers or IPO
 </div>
@@ -85,7 +88,7 @@
 <h2><span class="e">&#9888;&#65039;</span> The Problem — India's Real Estate Trust Crisis</h2>
 <div class="analogy"><div class="label">Think of it like this...</div><p>Imagine buying a toy that doesn't work. Now imagine that toy costs your life savings. That's property buying in India today.</p></div>
 <p><strong>Four interconnected problems:</strong></p>
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>70% Unverified Listings</h4><p>7 out of 10 property listings lack proper RERA registration, title verification, or encumbrance clearance. No recourse mechanism exists for buyers.</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>2M+ Untrained Brokers</h4><p>Over 2 million individual brokers operate without standardized inspection processes or audit trails.</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>High Transaction Risk</h4><p>Property documentation fraud and misrepresentation cause major buyer losses with limited legal remedies.</p></div></div>
@@ -98,7 +101,7 @@
 <div class="chapter">Chapter 2</div>
 <h2><span class="e">&#128161;</span> Our Solution — The 5-Part Trust Stack</h2>
 <div class="analogy"><div class="label">Think of it like this...</div><p>Like a 5-star hotel rating system, but for houses. Every property goes through a rigorous certification process before earning its certificate.</p></div>
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Certified Listing Workflow</h4><p>RERA lookup &#8594; legal document review &#8594; geo-tagged field inspection &#8594; QR-linked verification certificate with expiry and full audit trail.</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Physical Verification Network</h4><p>District-level franchised offices with trained inspectors using a mobile app for GPS-tagged photos, measurements, and video documentation. 7-step on-site checklist.</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Bank-Partnered Escrow</h4><p>Regulated escrow through scheduled commercial bank accounts with documented release triggers and full AML/KYC compliance.</p></div></div>
@@ -135,7 +138,7 @@
 <p>Secondary/resale market + Tier-2/3 cities: approximately <strong>40-50% of total market</strong> = ~&#8377;9.7 lakh Cr. This segment has the highest verification gaps.</p>
 
 <h3>SOM: Serviceable Obtainable Market</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Year</th><th>Areas</th><th>Deals/Month</th><th>Revenue</th><th>Market Share</th></tr>
 <tr><td>Year 1</td><td>8</td><td>180</td><td>&#8377;3.2 Cr</td><td><0.01%</td></tr>
 <tr><td>Year 2</td><td>25</td><td>750</td><td>&#8377;12.8 Cr</td><td>0.04%</td></tr>
@@ -150,7 +153,7 @@
 </ul>
 
 <h3>State Prioritization for RERA Maturity</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Tier 1 (API Ready)</th><th>Tier 2 (Partial Portal)</th><th>Tier 3 (Manual)</th></tr>
 <tr><td>Maharashtra (MahaRERA)</td><td>Karnataka (Bhoomi)</td><td>Bihar</td></tr>
 <tr><td>Karnataka (RERA)</td><td>Telangana (Dharani)</td><td>Uttar Pradesh</td></tr>
@@ -167,7 +170,7 @@
 <div class="analogy"><div class="label">Why others can't easily copy us</div><p>Imagine building a restaurant. Anyone can cook, but having exclusive deals with the best farmers, a secret recipe no one knows, and a location people trust — that's what makes you unbeatable.</p></div>
 
 <h3>Competitive Landscape</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Competitor</th><th>Strengths</th><th>Weaknesses</th><th>Our Edge</th></tr>
 <tr><td><strong>LegalByte.ai / AI Doc Tools</strong></td><td>Fast AI title checks, scalable online</td><td>No physical inspection, no escrow, no insurance</td><td>End-to-end: docs + physical + escrow + insurance + certificate</td></tr>
 <tr><td><strong>ReraDekho.in / Property Portals (99acres, MagicBricks, Housing.com)</strong></td><td>Massive listing inventory, RERA data access, brand trust</td><td>No on-ground verification, no escrow, listing-only model</td><td>Franchise network + trained inspectors + bank escrow + QR certificates</td></tr>
@@ -177,7 +180,7 @@
 </table></div>
 
 <h3>Our Defensible Moat (6 Layers)</h3>
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Proprietary Inspection Workflow</h4><p>Integrated with state RERA systems. GPS-stamped, tamper-proof evidence collection. Impossible to fake at scale.</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Exclusive Franchise Agreements</h4><p>Territorial protection + audit rights + performance-linked renewals. Franchisees locked into our ecosystem.</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Bank Partnerships</h4><p>Regulated escrow capabilities unavailable to individual brokers. Scheduled commercial bank compliance.</p></div></div>
@@ -192,7 +195,7 @@
 <div class="chapter">Chapter 6</div>
 <h2><span class="e">&#128176;</span> Revenue Model — 6 Streams</h2>
 <div class="analogy"><div class="label">Think of it like this...</div><p>Like a department store with multiple counters — each transaction produces income from several sources, but the customer pays once.</p></div>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Revenue Stream</th><th>Amount</th><th>Frequency</th><th>Gross Margin</th></tr>
 <tr><td>&#127970; Franchise Fees</td><td>&#8377;12L initial + &#8377;1.5L annual</td><td>One-time + yearly</td><td>~90%</td></tr>
 <tr><td>&#127942; Certification Fees</td><td>&#8377;15,000 per property (valid 6 months)</td><td>Per property + renewals</td><td>~70%</td></tr>
@@ -208,7 +211,7 @@
 <div class="chapter">Chapter 7</div>
 <h2><span class="e">&#129518;</span> Unit Economics — Per Property P&L</h2>
 
-<div class="calculator-wrap glass">
+<div class="calculator-wrap animate-on-scroll">
   <h3 style="margin-bottom: 24px;">Interactive ROI Calculator</h3>
   <div class="calc-grid">
     <div class="calc-input-group">
@@ -234,7 +237,7 @@
 
 <p>Based on average property value of &#8377;35 lakh:</p>
 
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Item</th><th>Calculation</th><th>Amount</th></tr>
 <tr><td colspan="3">Revenue</td></tr>
 <tr><td>Certification fee</td><td></td><td>&#8377;15,000</td></tr>
@@ -254,7 +257,7 @@
 <div class="simple-box"><div class="label">Key Insight</div><p>Contribution margin of &#8377;46,800 per property means each verified house contributes nearly &#8377;47K toward fixed costs and profit. At 1,800 properties/month (Phase 3 target), that's &#8377;8.4 Cr monthly contribution.</p></div>
 
 <h3>Sensitivity Scenarios</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Scenario</th><th>Change</th><th>Impact on Contribution</th></tr>
 <tr><td>Commission drops to 0.5%</td><td>-0.25%</td><td>-&#8377;8,750 per property</td></tr>
 <tr><td>Transaction velocity -30%</td><td>Fewer deals/month</td><td>Fixed costs spread thinner</td></tr>
@@ -273,7 +276,7 @@
 <div class="analogy"><div class="label">Think of it like this...</div><p>A franchise owner is like a McDonald's franchisee — they use our brand, systems, and support, but run their own profitable local business.</p></div>
 <p>Typical district franchise doing <strong>25 transactions/month</strong>:</p>
 
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Line Item</th><th>Calculation</th><th>Amount</th></tr>
 <tr><td colspan="3">Monthly Revenue</td></tr>
 <tr><td>Certification fees</td><td>25 x &#8377;15,000</td><td>&#8377;3,75,000</td></tr>
@@ -298,7 +301,7 @@
 <div class="simple-box"><div class="label">Break-Even Point</div><p>A franchise needs only <strong>~3 transactions per month</strong> to cover fixed costs (&#8377;1,05,000 / ~&#8377;35,000 contribution per txn). At 25 transactions, EBITDA is &#8377;4.08 lakhs/month (~&#8377;49 lakhs/year).</p></div>
 
 <h3>Incentive Structure</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Incentive</th><th>Detail</th><th>Value</th></tr>
 <tr><td>Early Adopter Bonus</td><td>First 6 months, first 200 transactions</td><td>+&#8377;2,000 per transaction</td></tr>
 <tr><td>Quarterly Bonus</td><td>CSAT 4.2+ AND RERA verification 80%+</td><td>+&#8377;50,000 per quarter</td></tr>
@@ -312,7 +315,7 @@
 <h2><span class="e">&#128506;</span> 3-Year Roadmap — From Pilot to National</h2>
 <div class="analogy"><div class="label">Think of it like this...</div><p>Like building a tree: seed (3 areas) &#8594; sapling (8 areas) &#8594; young tree (25 areas) &#8594; mighty banyan (45+ areas). Each stage needs the right conditions before the next.</p></div>
 
-<div class="kpi-grid">
+<div class="kpi-grid animate-on-scroll">
 <div class="kpi"><span class="val">0-6 mo</span><span class="lbl">Phase 1: Pilot<br>3 Districts</span></div>
 <div class="kpi green"><span class="val">7-18 mo</span><span class="lbl">Phase 2: Scale<br>25 Districts</span></div>
 <div class="kpi purple"><span class="val">19-36 mo</span><span class="lbl">Phase 3: National<br>45+ Districts</span></div>
@@ -322,7 +325,7 @@
 <p style="font-size:.78rem;color:var(--text-muted);text-align:center">Month 0 &#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672;&#9672; Month 36</p>
 
 <h3>Financial Trajectory</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
 <tr><td>Districts</td><td>8</td><td>25</td><td>45</td></tr>
 <tr><td>Monthly Transactions</td><td>180</td><td>750</td><td>1,800</td></tr>
@@ -342,7 +345,7 @@
 <div class="simple-box"><div class="label">Goal</div><p>Prove the workflow and unit economics in 3 pilot districts: Pune suburb (metro), Mysore (tier-2), Nashik (tier-3).</p></div>
 
 <h3>Key Milestones</h3>
-<div class="kpi-grid">
+<div class="kpi-grid animate-on-scroll">
 <div class="kpi green"><span class="val">750</span><span class="lbl">Inspections</span></div>
 <div class="kpi"><span class="val">600</span><span class="lbl">RERA Verifications</span></div>
 <div class="kpi yellow"><span class="val">85%</span><span class="lbl">CSAT Target</span></div>
@@ -367,7 +370,7 @@
 <h2><span class="e">&#128640;</span> Phase 2: Regional Scaling (Months 7-18)</h2>
 <div class="simple-box"><div class="label">Goal</div><p>Prove repeatability and positive unit economics across geographic clusters. Expand from 8 to 25 districts.</p></div>
 
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Expand to 8 Districts by Month 12, Then 25 by Month 18</h4><p>Prioritize states with RERA API readiness (Maharashtra, Karnataka, Gujarat, Delhi NCR). Use the proven Phase 1 playbook.</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Create Regional Hubs</h4><p>Shared legal, QA, and training centers for every 3-4 districts. Reduces per-district overhead by ~30%.</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Launch Multi-Channel Marketing</h4><p>Bank co-marketing (27% of budget), digital ads (40%), NRI channels (13%), local events (10%), referral programs (7%). Target CAC: &#8377;200-3,500 per channel.</p></div></div>
@@ -375,7 +378,7 @@
 <div class="step"><div class="step-num">5</div><div class="step-content"><h4>Automate Where Possible</h4><p>RERA API integration for Tier 1 states. OCR-based document pre-screening for Tier 2-3 states before human lawyer review.</p></div></div>
 </div>
 
-<div class="kpi-grid">
+<div class="kpi-grid animate-on-scroll">
 <div class="kpi green"><span class="val">25</span><span class="lbl">Txns/District/Month</span></div>
 <div class="kpi"><span class="val">80%</span><span class="lbl">Franchise Retention</span></div>
 <div class="kpi yellow"><span class="val">&#8377;12.8 Cr</span><span class="lbl">Year 2 Revenue</span></div>
@@ -389,7 +392,7 @@
 <h2><span class="e">&#127758;</span> Phase 3: National Rollout (Months 19-36)</h2>
 <div class="simple-box"><div class="label">Goal</div><p>Build a defensible national network with profitable unit economics. Scale to 45+ districts. Achieve &#8377;28.5 Cr revenue.</p></div>
 
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Recruit Master Franchisees</h4><p>Big partners who manage 5-10 districts each. Faster onboarding, local compliance expertise, shared overhead.</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Achieve ISO/IEC 27001</h4><p>Information security certification for data protection. Publish data privacy & retention policy compliant with DPDP Act 2023.</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>AI-Powered Fraud Detection</h4><p>Automated image anomaly detection, duplicate listing detection, title inconsistency scoring, OCR on regional language documents.</p></div></div>
@@ -397,7 +400,7 @@
 <div class="step"><div class="step-num">5</div><div class="step-content"><h4>Exclusive Bank & Insurer Partnerships</h4><p>Preferred agreements with 3-4 scheduled banks. Exclusive title insurance distribution network.</p></div></div>
 </div>
 
-<div class="kpi-grid">
+<div class="kpi-grid animate-on-scroll">
 <div class="kpi purple"><span class="val">&#8377;28.5 Cr</span><span class="lbl">Year 3 Revenue</span></div>
 <div class="kpi green"><span class="val">28%</span><span class="lbl">EBITDA Margin</span></div>
 <div class="kpi"><span class="val">1,800</span><span class="lbl">Monthly Transactions</span></div>
@@ -412,7 +415,7 @@
 <div class="analogy"><div class="label">Think of it like this...</div><p>Like building a smart home system — the user sees a simple switch, but behind it is wiring, sensors, and automation that makes everything work seamlessly.</p></div>
 
 <h3>System Architecture (3-Layer)</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Layer</th><th>Components</th><th>Phase</th></tr>
 <tr><td><strong>Field Layer</strong><br>(Inspector Mobile App)</td><td>React Native/Flutter app. GPS-stamped capture, offline sync, forced field validation, measurement module, red-flag taxonomy, QR certificate scanner.</td><td>Phase 1</td></tr>
 <tr><td><strong>Processing Layer</strong><br>(Central Engine)</td><td>Node.js/Python backend. RERA API integration (state-specific), document OCR engine, lawyer workflow management, certificate generator with unique ID.</td><td>Phase 1-2</td></tr>
@@ -445,7 +448,7 @@
 
 <h3>1. Escrow Compliance (RBI Guidelines)</h3>
 <div class="warn-box"><div class="label">Critical: Escrow is the highest-risk activity</div><p>We are not a licensed escrow agent. We use a <strong>bank's Escrow-as-a-Service</strong> (EaaS) model through a scheduled commercial bank. This is different from RERA's 70% escrow for developer projects — our escrow is for buyer-seller transactions.</p></div>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Requirement</th><th>Status</th><th>Timeline</th></tr>
 <tr><td>RBI-compliant escrow through scheduled commercial bank</td><td>In progress</td><td>Week 0-4 (Phase 1)</td></tr>
 <tr><td>Documented release triggers (legal sign-off, document transfer)</td><td>In progress</td><td>Week 0-4</td></tr>
@@ -464,7 +467,7 @@
 </ul>
 
 <h4>State-by-State Land Record Variances</h4>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>State</th><th>Land Record Portal</th><th>Type</th><th>Verification SOP</th></tr>
 <tr><td>Maharashtra</td><td>Mahabhulekh (7/12, 8A)</td><td>Digitized + API</td><td>Automated API lookup + lawyer attestation</td></tr>
 <tr><td>Karnataka</td><td>Bhoomi (RTC, mutation)</td><td>Partially digitized</td><td>Manual portal search + lawyer attestation</td></tr>
@@ -506,7 +509,7 @@
 <div class="analogy"><div class="label">Think of it like this...</div><p>Like a doctor's diagnostic checklist — follow it step by step, and you never miss anything critical.</p></div>
 
 <h3>30-Year Title Audit SOP</h3>
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Collect Title Documents</h4><p>Request: chain of sale deeds (30 years), mother deed, partition deeds, gift deeds, will/succession documents.</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Verify Encumbrance Certificate</h4><p>Obtain EC from sub-registrar office for last 30 years. Check for mortgages, liens, or pending litigation.</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Cross-Check Land Records</h4><p>State-specific: 7/12 extract (MH), RTC (KA), Patta Chitta (TN), Dharani (TS). Verify owner name matches title deed.</p></div></div>
@@ -516,7 +519,7 @@
 </div>
 
 <h3>Physical Inspection Checklist</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Phase</th><th>Action</th><th>Evidence</th></tr>
 <tr><td>Arrival</td><td>Geotagged photo of street view + property entrance</td><td>GPS-stamped photo</td></tr>
 <tr><td>Exterior</td><td>6 photos: front, back, left, right, roof/terrace, common areas</td><td>Photos with GPS coordinates</td></tr>
@@ -528,7 +531,7 @@
 </table></div>
 
 <h3>3-Day Training Curriculum</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Day</th><th>Focus</th><th>Topics</th></tr>
 <tr><td>Day 1</td><td>App & Technology</td><td>App basics, GPS & media capture, offline sync, data upload, QR generator</td></tr>
 <tr><td>Day 2</td><td>Legal & Documents</td><td>Document checklist, title chain analysis, land record systems per state, red-flag taxonomy</td></tr>
@@ -545,7 +548,7 @@
 <div class="warn-box"><div class="label">Critical Gap</div><p>Why would a seller consent to rigorous inspection and document audit? Especially sellers used to gray-area transactions? We need a clear value proposition for sellers.</p></div>
 
 <h3>Seller Value Proposition</h3>
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Certification = Premium Pricing</h4><p>Certified properties can command 3-5% higher price due to buyer trust. The certificate acts as a "quality guarantee."</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Faster Sale Cycle</h4><p>Verified properties sell 30-40% faster because buyers don't need to do their own due diligence.</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Bank Pre-Approval Hook</h4><p>Partner banks can pre-approve home loans for certified properties. Sellers get access to qualified buyers.</p></div></div>
@@ -554,7 +557,7 @@
 </div>
 
 <h3>Seller Acquisition Channels</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Channel</th><th>Tactic</th><th>Est. CAC</th></tr>
 <tr><td>Franchise Broker Network</td><td>Existing broker relationships bring seller clients</td><td>&#8377;0-500</td></tr>
 <tr><td>Builder Partnerships</td><td>New project inventory, bulk certification deals</td><td>&#8377;1,000-2,000</td></tr>
@@ -565,13 +568,13 @@
 </div>
 
 <!-- CHAPTER 17: 30-DAY CAMPAIGN -->
-<div class="story pink" id="campaign">
+<div class="story pink animate-on-scroll" id="campaign">
 <div class="chapter">Chapter 17</div>
 <h2><span class="e">&#128241;</span> 30-Day Marketing Campaign Calendar</h2>
 <p><strong>Budget:</strong> &#8377;1,50,000 | <strong>Target:</strong> 300 leads (100 per district) | <strong>Focus:</strong> 70% buyer, 30% seller</p>
 
 <h3>Budget Allocation</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Channel</th><th>Budget</th><th>%</th></tr>
 <tr><td>Bank co-marketing (buyers)</td><td>&#8377;40,000</td><td>27%</td></tr>
 <tr><td>Digital ads (search + social)</td><td>&#8377;60,000</td><td>40%</td></tr>
@@ -588,7 +591,7 @@
 <h2><span class="e">&#128721;</span> Risks & Mitigations — Comprehensive</h2>
 
 <h3>Regulatory Risks</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Risk</th><th>Impact</th><th>Probability</th><th>Mitigation</th></tr>
 <tr><td>State RERA portal integration failures</td><td>High</td><td>Medium</td><td>Dedicated compliance team. Modular SOPs per state. Manual fallback.</td></tr>
 <tr><td>Escrow regulations change</td><td>Critical</td><td>Low</td><td>Exclusive bank partnerships. EaaS via regulated banks.</td></tr>
@@ -597,7 +600,7 @@
 </table></div>
 
 <h3>Operational Risks</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Risk</th><th>Impact</th><th>Probability</th><th>Mitigation</th></tr>
 <tr><td>Title/document verification errors</td><td>High</td><td>Medium</td><td>Multi-layer verification. Insurance cover. Consumer indemnity reserve.</td></tr>
 <tr><td>Franchise churn</td><td>Medium</td><td>Medium</td><td>Performance-linked renewals. Exclusive territory rights. Incentives.</td></tr>
@@ -606,7 +609,7 @@
 </table></div>
 
 <h3>Market Risks</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Risk</th><th>Impact</th><th>Probability</th><th>Mitigation</th></tr>
 <tr><td>Competitor launches similar service</td><td>Medium</td><td>Medium</td><td>Network effects. Exclusive franchise agreements. First-mover advantage.</td></tr>
 <tr><td>Property market downturn</td><td>Medium</td><td>Low</td><td>Low fixed costs. Each inspection profitable independently.</td></tr>
@@ -625,7 +628,7 @@
 
 
 <h3>Revenue Breakdown by Stream</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Revenue Stream</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
 <tr><td>Franchise Fees</td><td>&#8377;0.9 Cr</td><td>&#8377;3.2 Cr</td><td>&#8377;6.8 Cr</td></tr>
 <tr><td>Certification Fees</td><td>&#8377;1.1 Cr</td><td>&#8377;4.5 Cr</td><td>&#8377;9.7 Cr</td></tr>
@@ -637,7 +640,7 @@
 </table></div>
 
 <h3>Cost Structure & EBITDA</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Cost Category</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
 <tr><td>Central Team</td><td>&#8377;1.8 Cr</td><td>&#8377;2.8 Cr</td><td>&#8377;4.2 Cr</td></tr>
 <tr><td>Technology</td><td>&#8377;1.2 Cr</td><td>&#8377;2.0 Cr</td><td>&#8377;3.5 Cr</td></tr>
@@ -651,7 +654,7 @@
 </table></div>
 
 <h3>Cash Flow & Break-Even</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
 <tr><td>Opening Cash</td><td>&#8377;18.0 Cr</td><td>&#8377;16.2 Cr</td><td>&#8377;17.4 Cr</td></tr>
 <tr><td>Operating Cash Flow</td><td>-&#8377;1.8 Cr</td><td>&#8377;1.2 Cr</td><td>&#8377;6.8 Cr</td></tr>
@@ -662,7 +665,7 @@
 <div class="simple-box"><div class="label">Company Break-Even</div><p>Monthly fixed costs (central): ~&#8377;0.35 Cr. Contribution per transaction: &#8377;46,800. Break-even: <strong>~75 transactions/month</strong> across all districts. Achieved mid-Year 2.</p></div>
 
 <h3>Sensitivity Analysis (Year 3 Impact)</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Scenario</th><th>Change</th><th>Revenue Impact</th><th>EBITDA Impact</th></tr>
 <tr><td>Base Case</td><td>As planned</td><td>&#8377;28.5 Cr</td><td>&#8377;8.2 Cr (28%)</td></tr>
 <tr><td>Commission drops to 0.5%</td><td>-0.25%</td><td>-&#8377;2.4 Cr</td><td>&#8377;5.8 Cr (22%)</td></tr>
@@ -679,7 +682,7 @@
 <h2><span class="e">&#128101;</span> Team, Hiring Plan & Advisory</h2>
 
 <h3>Core Leadership</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Role</th><th>Background</th><th>Why They Fit</th></tr>
 <tr><td><strong>CEO</strong></td><td>25+ yrs real estate, 12 successful launches</td><td>Industry connections, franchise credibility</td></tr>
 <tr><td><strong>COO</strong></td><td>150+ outlet franchise operations veteran</td><td>Scale operations, quality, franchise mgmt</td></tr>
@@ -689,7 +692,7 @@
 </table></div>
 
 <h3>Phase-Wise Hiring Plan</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Phase</th><th>Position</th><th>Timing</th></tr>
 <tr><td rowspan="4"><strong>Phase 1</strong></td><td>Pilot Ops Manager</td><td>Month 0</td></tr>
 <tr><td>Compliance Lead</td><td>Month 0</td></tr>
@@ -745,7 +748,7 @@
 <div class="simple-box"><div class="label">Capital Required</div><p><strong>&#8377;18 Crores</strong> for 24-month pilot execution and operational validation.</p></div>
 
 <h3>Use of Funds</h3>
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>Area</th><th>%</th><th>Amount</th><th>Details</th></tr>
 <tr><td>&#128187; Technology & RERA Integration</td><td>30%</td><td>&#8377;5.4 Cr</td><td>App dev, state-wise RERA API, OCR engine, escrow API, security</td></tr>
 <tr><td>&#127970; Franchise Onboarding & Training</td><td>25%</td><td>&#8377;4.5 Cr</td><td>Recruitment, 3-day training, certification, franchise support</td></tr>
@@ -755,7 +758,7 @@
 </table></div>
 
 <h3>Exit Scenarios for Investors</h3>
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Acquisition by Property Portals</h4><p>99acres, MagicBricks, Housing.com — they need verification but can't build physical inspection. Valuation: 3-5x revenue.</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Acquisition by Banks</h4><p>Integrated escrow + verification for home loan portfolios. Reduces NPA risk. Strategic premium.</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Acquisition by Insurance Companies</h4><p>Title insurance distribution network. Policy cross-sell. Network premium.</p></div></div>
@@ -769,7 +772,7 @@
 <h2><span class="e">&#9989;</span> All Gaps Identified & Filled</h2>
 <p>Based on expert review, these critical items were missing from the original plan. Every one is now addressed:</p>
 
-<div class="tw"><table>
+<div class="tw animate-on-scroll"><table>
 <tr><th>#</th><th>What Was Missing</th><th>Now Added In</th></tr>
 <tr><td>1</td><td><strong>Competitive Analysis & Moat</strong></td><td>Chapter 5: Competitive table + 6-layer moat</td></tr>
 <tr><td>2</td><td><strong>Regulatory Deep Dive</strong></td><td>Chapter 14: Full regulatory framework</td></tr>
@@ -786,7 +789,7 @@
 
 
 <!-- CHAPTER 23: 90-DAY STEP-BY-STEP -->
-<div class="story pink" id="step-by-step">
+<div class="story pink animate-on-scroll" id="step-by-step">
 <div class="chapter">Chapter 23</div>
 <h2><span class="e">&#128640;</span> The 90-Day Step-by-Step Launch Plan</h2>
 <div class="analogy"><div class="label">Keep it simple</div><p>Here is exactly what we do from Day 0 to Day 90 to get this business off the ground safely and quickly.</p></div>
@@ -808,7 +811,7 @@
 <h2><span class="e">&#128203;</span> Immediate 30-Day Action Checklist</h2>
 <p>Do these 6 things RIGHT NOW. They're the critical path to launch.</p>
 
-<div class="steps">
+<div class="steps animate-on-scroll">
 <div class="step"><div class="step-num">1</div><div class="step-content"><h4>&#127974; Sign Bank MOU & Get Escrow Legal Opinion</h4><p>Confirm RBI compliance. Document release triggers. Define reconciliation cadence.</p></div></div>
 <div class="step"><div class="step-num">2</div><div class="step-content"><h4>&#128187; Build Unit Economics Spreadsheet</h4><p>With 5+ sensitivity scenarios (commission, velocity, cost, certification fee, combined downside).</p></div></div>
 <div class="step"><div class="step-num">3</div><div class="step-content"><h4>&#128241; Deploy App Staging & Run 50 Internal Inspections</h4><p>Validate GPS capture, offline sync, forced fields, QR generation, lawyer routing.</p></div></div>
@@ -824,7 +827,7 @@
 <h2><span class="e">&#128202;</span> Monthly Investor Dashboard Template</h2>
 <p>Report these metrics every month to investors:</p>
 
-<div class="kpi-grid">
+<div class="kpi-grid animate-on-scroll">
 <div class="kpi"><span class="val">Supply</span><span class="lbl">Active franchises<br>Inspections completed<br>Certified listings</span></div>
 <div class="kpi blue"><span class="val">Demand</span><span class="lbl">Verified transactions<br>Avg property value<br>Escrow volume</span></div>
 <div class="kpi green"><span class="val">Quality</span><span class="lbl">CSAT (4.2/5)<br>Re-inspection rate<br>Dispute rate</span></div>
